@@ -192,8 +192,8 @@ dataset_fields:
     label: Licensing
     preset: AI Model
 
-  - field_name: AI Model softwareRequiements
-    label: Software Rrequiements
+  - field_name: AIModel_softwareRequiements
+    label: AI Model Software Rrequiements
     preset: AI Model
 
   - field_name: AI Model modelVersioning
