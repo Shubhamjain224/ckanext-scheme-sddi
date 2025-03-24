@@ -38,6 +38,57 @@ dataset_fields:
     form_snippet: license.html
     help_text: License definitions and additional information can be found at http://opendefinition.org/ Es wird empfohlen Creative Commons Zero oder Creative Commons Namensnennung für die offene Daten zu nutzen.
 
+  - field_name: size
+    label: Size
+    validators: ignore_missing
+    preset: select
+    choices:
+      - value: small
+        label: Small (<10MB)
+      - value: medium
+        label: Medium (10MB to 1GB)
+      - value: large
+        label: Large (>1GB)
+    help_text: Size of an AI model
+
+  - field_name: useCase
+    label: Use Case
+    validators: ignore_missing
+    preset: select
+    choices:
+      - value: object detection
+        label: AI-Powered Object Detection
+      - value: environmental monitoring
+        label: Environmental Monitoring
+      - value: infrastructure optimization
+        label: Infrastructure Optimization
+      - value: simulation and scenario modeling
+        label: Simulation and Scenario Modeling
+    help_text: Use Case of an AI model
+
+  - field_name: inputDataType
+    label: Input Data Type
+    validators: ignore_missing
+    preset: select
+    choices:
+      - value: text
+        label: Text
+      - value: image
+        label: Image
+      - value: video
+        label: Video
+      - value: multimodal
+        label: Multimodal
+      - value: tabular
+        label: Tabular
+      - value: audio
+        label: Audio
+      - value: vector
+        label: Geospatial_Vector
+      - value: raster
+        label: Geospatial_Raster
+    help_text: Input data Type of an AI model
+    
   - field_name: author
     label: Author
     form_blanks: 1
@@ -135,7 +186,77 @@ dataset_fields:
     form_snippet: spatial.html
     display_snippet: spatial.html
     help_text: Über eine räumliche Ausdehnung (Punkt oder Polygon, nicht beides gleichzeitig) kann später nach Katalogeinträgen gesucht werden.
+    
+ # AI Model
+  - field_name: AI Model licensing
+    label: Licensing
+    preset: AI Model
 
+  - field_name: AI Model softwareRequiements
+    label: Software Rrequiements
+    preset: AI Model
+
+  - field_name: AI Model modelVersioning
+    label: Model Versioning
+    preset: AI Model
+
+  - field_name: AI Model ethicalConsiderations
+    label: Ethical Considerations
+    preset: AI Model
+
+  - field_name: AI Model hardwareRequirements
+    label: Hardware Requirements
+    preset: AI Model
+
+  - field_name: AI Model trainingParameters
+    label: Training Parameters
+    preset: AI Model
+
+  - field_name: AI Model usageGuidelines
+    label: Usage Guidelines
+    preset: AI Model
+
+  - field_name: AI Model limitations
+    label: Limitations
+    preset: AI Model
+
+  - field_name: AI Model modelOverview
+    label: Model Overview
+    preset: AI Model
+
+  - field_name: AI Model inputDataType
+    label: Input Data Type
+    preset: AI Model
+
+  - field_name: AI Model framework
+    label: Framework
+    preset: AI Model
+
+  - field_name: AI Model 
+    label: Framework
+    preset: AI Model
+
+  # Training Data
+  - field_name: Training Data dataCollection
+    label: Data Collection
+    preset: Training Data
+
+  - field_name: Training Data trainingDataProperties
+    label: Training Data Properties
+    preset: Training Data
+
+  - field_name: Training Data labeling
+    label: Labeling
+    preset: Training Data
+
+  - field_name: Training Data labelingGuidelines
+    label: Labeling Guidelines
+    preset: Training Data
+
+  - field_name: Training Data description
+    label: Description
+    preset: Training Data
+    
   - field_name: licence_agreement
     label: Datenschutzerklärung
     required: True
