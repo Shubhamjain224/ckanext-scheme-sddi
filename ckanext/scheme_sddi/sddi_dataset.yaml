@@ -126,7 +126,6 @@ dataset_fields:
 
   - field_name: finetunability
     label: Finetunability
-    required: True
     validators: ignore_missing
     preset: select
     choices:
@@ -266,9 +265,6 @@ dataset_fields:
   - field_name: AIModel_inputDataType
     label: Input Data Type
 
-  - field_name: AIModel_framework
-    label: Framework
-
   # Training Data
   - field_name: TrainingData_dataCollection
     label: Data Collection
@@ -282,6 +278,7 @@ dataset_fields:
 
   - field_name: TrainingData_labelingGuidelines
     label: Labeling Guidelines
+    form_snippet: markdown.html
 
   - field_name: TrainingData_description
     label: Training Data Description
