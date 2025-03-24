@@ -190,72 +190,55 @@ dataset_fields:
  # AI Model
   - field_name: AI Model licensing
     label: Licensing
-    preset: AI Model
 
   - field_name: AIModel_softwareRequiements
     label: AI Model Software Rrequiements
-    preset: AI Model
 
   - field_name: AI Model modelVersioning
     label: Model Versioning
-    preset: AI Model
 
   - field_name: AI Model ethicalConsiderations
     label: Ethical Considerations
-    preset: AI Model
 
   - field_name: AI Model hardwareRequirements
     label: Hardware Requirements
-    preset: AI Model
 
   - field_name: AI Model trainingParameters
     label: Training Parameters
-    preset: AI Model
 
   - field_name: AI Model usageGuidelines
     label: Usage Guidelines
-    preset: AI Model
 
   - field_name: AI Model limitations
     label: Limitations
-    preset: AI Model
 
   - field_name: AI Model modelOverview
     label: Model Overview
-    preset: AI Model
 
   - field_name: AI Model inputDataType
     label: Input Data Type
-    preset: AI Model
 
   - field_name: AI Model framework
     label: Framework
-    preset: AI Model
 
   - field_name: AI Model 
     label: Framework
-    preset: AI Model
 
   # Training Data
   - field_name: Training Data dataCollection
     label: Data Collection
-    preset: Training Data
 
   - field_name: Training Data trainingDataProperties
     label: Training Data Properties
-    preset: Training Data
-
+    
   - field_name: Training Data labeling
     label: Labeling
-    preset: Training Data
 
   - field_name: Training Data labelingGuidelines
     label: Labeling Guidelines
-    preset: Training Data
 
   - field_name: Training Data description
     label: Description
-    preset: Training Data
     
   - field_name: licence_agreement
     label: Datenschutzerklärung
