@@ -40,6 +40,7 @@ dataset_fields:
 
   - field_name: size
     label: Size
+    required: True
     validators: ignore_missing
     preset: select
     choices:
@@ -53,6 +54,7 @@ dataset_fields:
 
   - field_name: useCase
     label: Use Case
+    required: True
     validators: ignore_missing
     preset: select
     choices:
@@ -68,6 +70,7 @@ dataset_fields:
 
   - field_name: inputDataType
     label: Input Data Type
+    required: True
     validators: ignore_missing
     preset: select
     choices:
@@ -88,6 +91,50 @@ dataset_fields:
       - value: raster
         label: Geospatial_Raster
     help_text: Input data Type of an AI model
+
+  - field_name: framework
+    label: Framework
+    required: True
+    validators: ignore_missing
+    preset: select
+    choices:
+      - value: framework
+        label: PyTorch
+      - value: framework
+        label: NeMo
+      - value: framework
+        label: TAO Toolkit
+      - value: framework
+        label: PyTorch with NeMo
+      - value: framework
+        label: Riva
+      - value: framework
+        label: Megatron-LM
+      - value: framework
+        label: TensorFlow 1
+      - value: framework
+        label: TensorFlow 2
+      - value: framework
+        label: Transformers
+      - value: framework
+        label: Coral
+      - value: framework
+        label: API-Based
+      - value: framework
+        label: Other
+    help_text: Framework of an AI model
+
+  - field_name: finetunability
+    label: Finetunability
+    required: True
+    validators: ignore_missing
+    preset: select
+    choices:
+      - value: finetunability
+        label: Yes
+      - value: finetunability
+        label: No
+    help_text: Finetunability of an AI model
     
   - field_name: author
     label: Author
@@ -188,57 +235,57 @@ dataset_fields:
     help_text: Über eine räumliche Ausdehnung (Punkt oder Polygon, nicht beides gleichzeitig) kann später nach Katalogeinträgen gesucht werden.
     
  # AI Model
-  - field_name: AI Model licensing
-    label: Licensing
-
   - field_name: AIModel_softwareRequiements
-    label: AI Model Software Rrequiements
+    label: Software Requirements
 
-  - field_name: AI Model modelVersioning
+  - field_name: AIModel_modelVersioning
     label: Model Versioning
 
-  - field_name: AI Model ethicalConsiderations
+  - field_name: AIModel_ethicalConsiderations
     label: Ethical Considerations
+    form_snippet: markdown.html
 
-  - field_name: AI Model hardwareRequirements
+  - field_name: AIModel_hardwareRequirements
     label: Hardware Requirements
 
-  - field_name: AI Model trainingParameters
+  - field_name: AIModel_trainingParameters
     label: Training Parameters
+    form_snippet: markdown.html
 
-  - field_name: AI Model usageGuidelines
+  - field_name: AIModel_usageGuidelines
     label: Usage Guidelines
+    form_snippet: markdown.html
 
-  - field_name: AI Model limitations
+  - field_name: AIModel_limitations
     label: Limitations
+    form_snippet: markdown.html
 
-  - field_name: AI Model modelOverview
+  - field_name: AIModel_modelOverview
     label: Model Overview
 
-  - field_name: AI Model inputDataType
+  - field_name: AIModel_inputDataType
     label: Input Data Type
 
-  - field_name: AI Model framework
-    label: Framework
-
-  - field_name: AI Model 
+  - field_name: AIModel_framework
     label: Framework
 
   # Training Data
-  - field_name: Training Data dataCollection
+  - field_name: TrainingData_dataCollection
     label: Data Collection
 
-  - field_name: Training Data trainingDataProperties
+  - field_name: TrainingData_trainingDataProperties
     label: Training Data Properties
+    form_snippet: markdown.html
     
-  - field_name: Training Data labeling
+  - field_name: TrainingData_labeling
     label: Labeling
 
-  - field_name: Training Data labelingGuidelines
+  - field_name: TrainingData_labelingGuidelines
     label: Labeling Guidelines
 
-  - field_name: Training Data description
-    label: Description
+  - field_name: TrainingData_description
+    label: Training Data Description
+    form_snippet: markdown.html
     
   - field_name: licence_agreement
     label: Datenschutzerklärung
