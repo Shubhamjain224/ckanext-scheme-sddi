@@ -123,17 +123,6 @@ dataset_fields:
       - value: framework
         label: Other
     help_text: Framework of an AI model
-
-  - field_name: finetunability
-    label: Finetunability
-    required: True
-    validators: ignore_missing
-    preset: select
-    choices:
-      - value: framework
-        label: Yes
-      - value: framework
-        label: No
         
   - field_name: author
     label: Author
