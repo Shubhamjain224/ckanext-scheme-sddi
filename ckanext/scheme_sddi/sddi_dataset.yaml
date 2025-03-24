@@ -126,15 +126,15 @@ dataset_fields:
 
   - field_name: finetunability
     label: Finetunability
+    required: True
     validators: ignore_missing
     preset: select
     choices:
-      - value: finetunability
+      - value: framework
         label: Yes
-      - value: finetunability
+      - value: framework
         label: No
-    help_text: Finetunability of an AI model
-    
+        
   - field_name: author
     label: Author
     form_blanks: 1
