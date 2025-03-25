@@ -92,6 +92,17 @@ dataset_fields:
         label: Geospatial_Raster
     help_text: Input data Type of an AI model
 
+  - field_name: finetunability
+    label: Finetunability
+    validators: ignore_missing
+    preset: select
+    choices:
+      - value: yes
+        label: Yes
+      - value: no
+        label: No
+    help_text: Weather an AI model can be finetunable or not
+
   - field_name: framework
     label: Framework
     required: True
@@ -225,9 +236,15 @@ dataset_fields:
  # AI Model
   - field_name: AIModel_softwareRequiements
     label: Software Requirements
+    form_snippet: markdown.html
 
   - field_name: AIModel_modelVersioning
     label: Model Versioning
+    form_snippet: markdown.html
+
+  - field_name: AIModel_modelArchitecture
+    label: Model Architecture
+    form_snippet: markdown.html
 
   - field_name: AIModel_ethicalConsiderations
     label: Ethical Considerations
@@ -235,6 +252,7 @@ dataset_fields:
 
   - field_name: AIModel_hardwareRequirements
     label: Hardware Requirements
+    form_snippet: markdown.html
 
   - field_name: AIModel_trainingParameters
     label: Training Parameters
@@ -253,10 +271,12 @@ dataset_fields:
 
   - field_name: AIModel_inputDataType
     label: Input Data Type
+    form_snippet: markdown.html
 
   # Training Data
   - field_name: TrainingData_dataCollection
     label: Data Collection
+    form_snippet: markdown.html
 
   - field_name: TrainingData_trainingDataProperties
     label: Training Data Properties
@@ -264,6 +284,7 @@ dataset_fields:
     
   - field_name: TrainingData_labeling
     label: Labeling
+    form_snippet: markdown.html
 
   - field_name: TrainingData_labelingGuidelines
     label: Labeling Guidelines
