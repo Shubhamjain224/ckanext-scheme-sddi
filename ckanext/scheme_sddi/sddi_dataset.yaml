@@ -40,7 +40,6 @@ dataset_fields:
 
   - field_name: size
     label: Size
-    required: True
     validators: ignore_missing
     preset: select
     choices:
@@ -54,7 +53,6 @@ dataset_fields:
 
   - field_name: useCase
     label: Use Case
-    required: True
     validators: ignore_missing
     preset: select
     choices:
@@ -70,7 +68,6 @@ dataset_fields:
 
   - field_name: inputDataType
     label: Input Data Type
-    required: True
     validators: ignore_missing
     preset: select
     choices:
@@ -105,7 +102,6 @@ dataset_fields:
 
   - field_name: framework
     label: Framework
-    required: True
     validators: ignore_missing
     preset: select
     choices:
