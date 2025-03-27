@@ -42,7 +42,7 @@ dataset_fields:
     label: Size
     validators: ignore_missing
     preset: select
-    form_placeholder:
+    form_placeholder: Represents the volume, complexity, and scale of datasets used for training the model.
     choices:
       - value: small
         label: Small (<10MB)
@@ -72,7 +72,7 @@ dataset_fields:
     label: Input Data Type
     validators: ignore_missing
     preset: select
-    form_placeholder:
+    form_placeholder: Represents the volume, complexity, and scale of datasets used for training the model.
     choices:
       - value: text
         label: Text
@@ -96,7 +96,7 @@ dataset_fields:
     label: Finetunability
     validators: ignore_missing
     preset: select
-    form_placeholder:
+    form_placeholder: Defines the models ability to adapt to new data without full retraining.
     choices:
       - value: yes
         label: Yes
@@ -277,12 +277,7 @@ dataset_fields:
 
   - field_name: AIModel_modelOverview
     label: Model Overview
-    form_placeholder: 
-
-  - field_name: AIModel_inputDataType
-    label: Input Data Type
-    form_snippet: markdown.html
-    form_placeholder:
+    form_placeholder: Provides a summary of the models purpose, components, and key functionalities.
 
   # Training Data
   - field_name: TrainingData_dataCollection
