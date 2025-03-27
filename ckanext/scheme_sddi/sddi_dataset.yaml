@@ -42,6 +42,7 @@ dataset_fields:
     label: Size
     validators: ignore_missing
     preset: select
+    form_placeholder:
     choices:
       - value: small
         label: Small (<10MB)
@@ -55,6 +56,7 @@ dataset_fields:
     label: Use Case
     validators: ignore_missing
     preset: select
+    form_placeholder:
     choices:
       - value: object detection
         label: AI-Powered Object Detection
@@ -70,6 +72,7 @@ dataset_fields:
     label: Input Data Type
     validators: ignore_missing
     preset: select
+    form_placeholder:
     choices:
       - value: text
         label: Text
@@ -93,6 +96,7 @@ dataset_fields:
     label: Finetunability
     validators: ignore_missing
     preset: select
+    form_placeholder:
     choices:
       - value: yes
         label: Yes
@@ -104,6 +108,7 @@ dataset_fields:
     label: Framework
     validators: ignore_missing
     preset: select
+    form_placeholder:
     choices:
       - value: framework
         label: PyTorch
@@ -233,62 +238,77 @@ dataset_fields:
   - field_name: AIModel_softwareRequiements
     label: Software Requirements
     form_snippet: markdown.html
+    form_placeholder: Specifies the tools, libraries, and programming languages needed to implement and run the model.
 
   - field_name: AIModel_modelVersioning
     label: Model Versioning
     form_snippet: markdown.html
+    form_placeholder: Refers to the management of different model iterations to track changes and ensure reproducibility.
 
   - field_name: AIModel_modelArchitecture
     label: Model Architecture
     form_snippet: markdown.html
+    form_placeholder: Describes the structural design, including algorithms, neural networks, and data processing flows.
 
   - field_name: AIModel_ethicalConsiderations
     label: Ethical Considerations
     form_snippet: markdown.html
+    form_placeholder: Addresses privacy, bias, and compliance with ethical guidelines in AI deployment.
 
   - field_name: AIModel_hardwareRequirements
     label: Hardware Requirements
     form_snippet: markdown.html
+    form_placeholder: Specifies the minimum computing resources needed, such as GPUs or processors.
 
   - field_name: AIModel_trainingParameters
     label: Training Parameters
     form_snippet: markdown.html
-
+    form_placeholder: Includes adjustable settings like learning rates, batch sizes, and hyperparameters.
+ 
   - field_name: AIModel_usageGuidelines
     label: Usage Guidelines
     form_snippet: markdown.html
+    form_placeholder: Outlines best practices, deployment conditions, and usage restrictions.
 
   - field_name: AIModel_limitations
     label: Limitations
     form_snippet: markdown.html
+    form_placeholder: Identifies constraints related to accuracy, scalability, or data compatibility.
 
   - field_name: AIModel_modelOverview
     label: Model Overview
+    form_placeholder: 
 
   - field_name: AIModel_inputDataType
     label: Input Data Type
     form_snippet: markdown.html
+    form_placeholder:
 
   # Training Data
   - field_name: TrainingData_dataCollection
     label: Data Collection
     form_snippet: markdown.html
+    form_placeholder:
 
   - field_name: TrainingData_trainingDataProperties
     label: Training Data Properties
     form_snippet: markdown.html
+    form_placeholder:
     
   - field_name: TrainingData_labeling
     label: Labeling
     form_snippet: markdown.html
+    form_placeholder:
 
   - field_name: TrainingData_labelingGuidelines
     label: Labeling Guidelines
     form_snippet: markdown.html
+    form_placeholder:
 
   - field_name: TrainingData_description
     label: Training Data Description
     form_snippet: markdown.html
+    form_placeholder:
     
   - field_name: licence_agreement
     label: Datenschutzerklärung
